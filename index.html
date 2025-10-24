@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Believe in Design – Coming Soon</title>
+  <style>
+    :root {
+      --bg-color: #ffffff;
+      --text-color: #1a1a1a;
+      --accent-color: #ff5f57;
+      --font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-family);
+      color: var(--text-color);
+      background-color: var(--bg-color);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    main {
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      gap: 2rem;
+    }
+
+    .left, .right {
+      flex: 1;
+      max-width: 600px;
+    }
+
+    .left {
+      text-align: center;
+    }
+
+    .logo {
+      width: 200px;
+      height: auto;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: 1.25rem;
+      letter-spacing: 0.5px;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .socials {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    .socials a {
+      display: inline-block;
+      width: 48px;
+      height: 48px;
+    }
+
+    .socials img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 50%;
+      transition: transform 0.2s ease;
+    }
+
+    .socials img:hover,
+    .socials img:focus {
+      transform: scale(1.1);
+      outline: 2px solid var(--accent-color);
+      outline-offset: 3px;
+    }
+
+    .right img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 900px) {
+      main {
+        flex-direction: column;
+      }
+      .right {
+        order: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="left">
+      <img src="assets/logo.jpg" alt="Believe in Design logo" class="logo" />
+      <h1>HANDMADE KNIT DESIGN</h1>
+      <p>Coming soon</p>
+      <div class="socials" aria-label="Social media links">
+        <a href="https://instagram.com/believeindesign.nl" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <img src="assets/instagram-icon.png" alt="Instagram" />
+        </a>
+        <a href="https://youtube.com/@m_ilgun" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+          <img src="assets/youtube-icon.png" alt="YouTube" />
+        </a>
+      </div>
+    </section>
+
+    <section class="right">
+      <img src="assets/web_comingsoon.png" alt="Handmade knit pieces on a wooden table with tulips in a vase" />
+    </section>
+  </main>
+</body>
+</html>
